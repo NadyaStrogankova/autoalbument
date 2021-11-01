@@ -29,7 +29,8 @@ setup(
     url="https://github.com/albumentations-team/autoalbument",
     install_requires=[
         "albumentations>=0.5.1",
-        "pytorch-lightning>=1.1.8,<1.2",
+        #"pytorch-lightning>=1.1.8,<1.2",
+        "pytorch-lightning>=1.4.*",
         "torch>=1.6.0",
         "hydra-core>=1.0",
         "timm>=0.4.12",  # This version is required for segmentation-models-pytorch
@@ -39,6 +40,7 @@ setup(
         "colorama",
         "tensorboard",
         "ruamel.yaml",
+        "PyYAML==5.4.1"
     ],
     entry_points={
         "console_scripts": [
